@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Divisas</title>
+</head>
+<body>
+    <div class="container">
+        <h2>CONVERSOR DE DIVISAS</h2>
+        <div style="height: 10px; width: 100%;background-color: #CECECE;border-radius: 10px;"></div>
+        <form id="currencyConverter">
+            <div class="form-group">
+                <label for="amount" style="margin-top: 20px;">Cantidad:</label>
+                <input type="number" id="amount" step="0.01" required>
+            </div>
+            <div class="form-group fg-2">
+                <select id="fromCurrency" required>
+                    <!-- Agrega más opciones de divisas aquí -->
+                </select>
+                <button class="ico-cont">
+                    <img class="ico" id="btnTrade" src="./img/swapico.svg" width="30"></img>
+                </button>
+                <select id="toCurrency" required>
+                    <!-- Agrega más opciones de divisas aquí -->
+                </select>
+            </div>
+            <button id="btn-converter" type="button">Convertir</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="currency-codes.js" ></script>
+    <script src="conversor.js"></script>
+</body>
+</html>
